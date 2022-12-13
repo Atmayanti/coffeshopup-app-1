@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="shortcut icon" href="{{ asset('images/fav.png') }}">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
@@ -24,7 +25,7 @@
             @elseif (auth()->user()->role_id === 3)
                 @include('layouts.partials.sidebarMenu')
             @endif
-            
+
             @yield('container')
         </div>
         <!-- page-body-wrapper ends -->

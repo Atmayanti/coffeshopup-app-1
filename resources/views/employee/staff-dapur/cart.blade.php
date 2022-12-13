@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Shopping cart</title>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" />
@@ -41,7 +42,7 @@
                             <div id="items">
 
                             </div>
-                            
+
                             <form action="payment.php" method="post">
                                 <div class="flex justify-between items-center mt-3 pt-3">
                                     <button class="btn px-5 py-1 text-lg font-bold" type="submit" name="bayarchart"
