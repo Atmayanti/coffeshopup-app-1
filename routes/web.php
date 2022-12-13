@@ -27,9 +27,9 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Route::get('/config', function () {
-    Artisan::call('migrate');
+    Artisan::call('migrate:fresh');
+    Artisan::call('db:seed');
 });
-
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 
