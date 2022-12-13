@@ -22,7 +22,7 @@ class MenuSeeder extends Seeder
 		$faker = \Faker\Factory::create();
 		$faker->addProvider(new \FakerRestaurant\Provider\en_US\Restaurant($faker));
 
-		for ($i = 1; $i <= 3; $i++) {
+		for ($i = 1; $i <= 1; $i++) {
 			DB::table('menus')->insert([
 				'name' => $faker->foodName() . ' ' . $faker->sauceName(),
 				'price' => 1000 * $faker->numberBetween(10, 200),
@@ -31,7 +31,7 @@ class MenuSeeder extends Seeder
 				'menu_photo_path' => 'images/' . 'food_img' . $i . '.png'
 			]);
 		}
-		for ($i = 1; $i <= 3; $i++) {
+		for ($i = 1; $i <= 1; $i++) {
 			DB::table('menus')->insert([
 				'name' => $faker->beverageName() . ' ' . $faker->fruitName(),
 				'price' => 1000 * $faker->numberBetween(10, 200),
