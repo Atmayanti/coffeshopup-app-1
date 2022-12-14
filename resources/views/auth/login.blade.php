@@ -1,6 +1,6 @@
 @extends('layouts.appAuth')
 
-@section('title', 'Coffeeup | Sign In')
+@section('title', 'Pizzy | Sign In')
 
 @section('content')
 
