@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="{{ asset('images/fav.png') }}">
+    <link rel="shortcut icon" href="{{ asset('images/icon.png') }}">
     <!-- Author Meta -->
     <meta name="author" content="codepixer">
     <!-- Meta Description -->
@@ -43,8 +43,6 @@
     @include('layouts.navbar')
 
     @yield('container')
-
-    @include('layouts.footer')
 
     <script src="{{ asset('assets/js/vendor/jquery-2.2.4.min.js') }}"></script>
 

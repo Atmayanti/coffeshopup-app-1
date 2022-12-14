@@ -26,6 +26,9 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
+// $disk = \Storage::disk('gcs');
+// $disk->put('hola1.txt',"hola txt");
+
 Route::get('/config', function () {
     Artisan::call('migrate:fresh');
     Artisan::call('db:seed');
@@ -153,24 +156,24 @@ Route::group(['middleware' => ['auth', 'role:kasir']], function () {
         // });
         // Route::get('/charts/chartjs', function () {
         //     return view('layouts.partials.charts.chartjs');
-        // }); 
+        // });
         // Route::get('/tables/basic-table', function () {
         //     return view('layouts.partials.tables.basic-table');
-        // }); 
+        // });
         // Route::get('/samples/blank-page', function () {
         //     return view('layouts.partials.samples.blank-page');
-        // }); 
+        // });
         // Route::get('/samples/login', function () {
         //     return view('layouts.partials.samples.login');
-        // }); 
+        // });
         // Route::get('/samples/register', function () {
         //     return view('layouts.partials.samples.register');
-        // }); 
+        // });
         // Route::get('/samples/error-500', function () {
         //     return view('layouts.partials.samples.error-500');
-        // }); 
+        // });
         // Route::get('/samples/error-404', function () {
         //     return view('layouts.partials.samples.error-404');
-        // }); 
+        // });
     });
 });

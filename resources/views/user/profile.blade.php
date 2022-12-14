@@ -1,6 +1,6 @@
 @extends('layouts.masterLayout')
 
-@section('title', 'Coffeeup | User Profile')
+@section('title', 'Pizzy | User Profile')
 
 @section('container')
 
@@ -47,7 +47,7 @@
             @endphp
             @endif
             <div class="col-6  justify-content-center">
-                <img style="max-width: 250px; max-height: 250px;" class="rounded" src="{{ asset('storage/'.$img) }}" alt="">
+                <img style="max-width: 250px; max-height: 250px;" class="rounded" src="{{ 'https://storage.googleapis.com/laravel-cafe-app/' . $img }}" alt="">
             </div>
         </div>
         <div class="mx-5 pr-5 mb-5 pb-5" style="margin-right: 50px;" align="right">

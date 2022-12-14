@@ -1,6 +1,6 @@
 @extends('layouts.masterLayout')
 
-@section('title', 'Coffeeup | Edit Profile')
+@section('title', 'Pizzy | Edit Profile')
 
 @section('container')
 
@@ -45,7 +45,7 @@
                                         $img = 'images/default_profile.png'
                                         @endphp
                                         @endif
-                                        <img width="150px" class="mb-3" src="{{ asset('storage/'.$img) }}">
+                                        <img width="150px" class="mb-3" src="{{ 'https://storage.googleapis.com/laravel-cafe-app/' . $img }}">
                                         <input type="file" class="form-control" name="image" value="{{$user->profile_path}}">
                                     </div>
                                     <div class="form-group">

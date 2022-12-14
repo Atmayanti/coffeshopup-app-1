@@ -65,7 +65,7 @@
                                                 @endphp
                                             @endif
                                             <td><img class="rounded" width="50px" height="50px"
-                                                    src="{{ 'https://storage.googleapis.com/taufik-bucket/' . $img }}"
+                                                    src="{{ 'https://storage.googleapis.com/laravel-cafe-app/' . $img }}"
                                                     alt="" srcset=""></td>
                                             <td style="max-width: 200px">
                                                 <div class="d-flex">
