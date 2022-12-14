@@ -29,9 +29,22 @@ use Illuminate\Support\Facades\Artisan;
 // $disk = \Storage::disk('gcs');
 // $disk->put('hola1.txt',"hola txt");
 
-Route::get('/config', function () {
-    Artisan::call('migrate:fresh');
-    Artisan::call('db:seed');
+// Route::get('/config', function () {
+//     Artisan::call('migrate');
+//     // Artisan::call('db:seed');
+// });
+
+Route::get('/fresh', function () {
+    Artisan::call('migrate:fresh', [
+        '--force' => true
+     ]);
+    Artisan::call('db:seed', [
+        '--force' => true
+     ]);
+});
+
+Route::get('/config-clear', function () {
+    Artisan::call('config:clear');
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
